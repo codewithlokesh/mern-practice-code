@@ -6,7 +6,7 @@ const Counter = () => {
     const [amount, setAmount] = useState("")
 
     const dispatch = useDispatch()
-    const count = useSelector((state)=> state.counter.value)
+    const count = useSelector((state) => state.counter.value)
     // console.log(count);
 
     const handleAddAmount = ()=>{
@@ -16,20 +16,20 @@ const Counter = () => {
     return (
         <div>
             <h2>Click the buttons and see results.</h2>
-                <button onClick={()=>dispatch(decreament())}>-</button>
-                {count}
-                <button onClick={()=>dispatch(increament())}>+</button>
-                <br />
-                <div>
-                    <input 
-                    type="number" 
+            <button disabled={count === 0} onClick={() => dispatch(decreament())}>-</button>
+            {count}
+            <button onClick={() => dispatch(increament())}>+</button>
+            <br />
+
+            <div>
+                <input
+                    type="text"
                     value={amount}
                     placeholder='Enter amount'
                     onChange={(e)=>setAmount(e.target.value)}
-                    />
-                    <button onClick={handleAddAmount}>add</button>
-                </div>
-           
+                />
+                <button onClick={handleAddAmount} >Add</button>
+            </div>
         </div>
     )
 }
