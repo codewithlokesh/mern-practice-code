@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(240, 240, 241);
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    /* flex-direction: column; */
+}
+
+.child {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(74, 62, 70);
+    border: 2px solid blue;
+}
+
+#child-id-1{
+    order: 3;
+}

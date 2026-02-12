@@ -1,0 +1,44 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid;
+    position: relative;
+    right: 0em;
+   
+} */
+
+
+/* .box-2 {
+    width: 500px;
+    height: 500px;
+    border: 2px solid;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.child-1 {
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    background-color: rgb(5, 3, 1);
+    position: absolute;
+   left: 50%;
+   top: 50%;
+} */
+
+/* .box-3{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    background-color: rgb(5, 3, 1);
+    position: fixed;
+    right: 0;
+    bottom: 2em;
+} */

@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* p:hover {
+    color: red;
+} */
+
+
+/* :nth-child("you can counting and no also") */
+/* p:nth-child(odd) {
+  background-color: rgb(60, 12, 40);
+} */
+
+
+/* p::after{
+    content:"*"
+} */
+/* 
+/* p::before{
+    content:"Me hu Hero"
+} */ 
+
+ /* p::before{
+    content:" # "
+}  */
+
+/* p::first-letter{
+ color:Red;
+ font-size: 30px;
+ font-weight: bold;
+}
+ 
+
+p::first-line{
+ color:rgb(234, 0, 255);
+ font-size: 30px;
+ font-weight: bold;
+} */
+
+ /* b::before{
+    content: " *   ";
+} */
+
+/* div span{
+    color:rgb(68, 0, 255)
+}
+
+div>span{
+    background-color: magenta;
+} */
+
+div p{
+    font-size:20px ;
+}
+/* 
+div>p{
+    color: magenta;
+} */

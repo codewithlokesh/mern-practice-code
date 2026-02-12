@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* top-left → top-right → bottom-right → bottom-left */
+
+
+.fire-sign {
+    width: 6px;
+    height: 10px;
+    border-radius: 50% 50% 20% 20%;
+    background-color: rgb(255, 45, 45);
+    position: relative;
+    top: -10px;
+    left: -0.6px;
+
+}
+
+.stick {
+    width: 6px;
+    height: 300px;
+    background-color: rgb(73, 68, 68);
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 5em;
+}
+
+.kadai {
+    width: 3px;
+    height: 70px;
+    background-color: rgb(202, 255, 10);
+    margin: 0 auto;
+    margin-top: 5em;
+    position: relative;
+    top: -5em;
+}
+
+.dhua {
+    width: 6px;
+    height: 8px;
+    border-radius: 30%;
+    background-color: gray;
+    animation: move 5s ease 1s infinite;
+}
+@keyframes move {
+    
+    0%{
+        
+    }
+}
