@@ -81,6 +81,7 @@
 // }
 // callApi();
 
+//--------------------------
 function faceApiCalling() {
   fetch("https://api.github.com/users/codewithlokesh")
     .then((res) => res.json())
