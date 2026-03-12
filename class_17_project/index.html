@@ -7,17 +7,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="navbar">
-      <div class="nav-container">
-        <div class="navbar">it's navbar</div>
-        <select name="category" id="category">
-          <option value="">choose a category</option>
-          <option value="">jwellery</option>
-          <option value="">cloths</option>
-          <option value="">electronics</option>
-        </select>
+    <div id="nav-container">
+      <div class="navbar">
+        <div class="left-nav">
+          <h1><img id="logo-img" src="logo.png" alt="logo" /></h1>
+          <a id="home" href="#">home</a>
+          <select name="category" id="category">
+            <option id="jewellery" value="jewellery">Jewellery</option>
+            <option id="category" value="category">Category</option>
+            <option id="cloths" value="cloths">Cloths</option>
+            <option id="electronics" value="electronics">Electronics</option>
+          </select>
+          <a id="contant" href="">Contact</a>
+          <a id="services" href="">Services</a>
+        </div>
+        <div class="nav-btns">
+          <button class="btns">SignUp</button>
+          <button class="btns">Login</button>
+        </div>
       </div>
     </div>
+
     <div id="cart-container"></div>
 
     <script src="script.js"></script>

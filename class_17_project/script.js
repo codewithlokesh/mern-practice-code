@@ -1,24 +1,12 @@
-let navDiv = document.getElementById("navbar");
-console.log(navDiv);
 
-let navItem = ["Home", "Category", "About", "Contact", "SignUp"];
-
-let navItems = navItem.map(
-  (item) => ` <span style="font-size: 2rem;">${item}</span>`,
-);
-navDiv.innerHTML = navItems;
-
-//getting data for api
-//getting data for cart data
 let cartContainerDiv = document.getElementById("cart-container");
-console.log(cartContainerDiv);
+// console.log(cartContainerDiv);
 async function getUserData() {
   try {
     const url = "https://fakestoreapi.com/products";
     const res = await fetch(url);
     const data = await res.json();
-    console.log(typeof data);
-
+    console.log(data);
     data.map((p) => {
       cartContainerDiv.innerHTML += `
         <div style="border:1px solid #ddd;padding:10px;margin:10px;width:200px;border-radius:8px;display:inline-block;text-align:center;font-family:sans-serif">
@@ -34,3 +22,29 @@ async function getUserData() {
   }
 }
 getUserData();
+
+
+//get all products based on categories
+async function getCategoryBasedData() {
+  try {
+    const url = "https://fakestoreapi.com/products";
+    const res = await fetch(url);
+    const data = await res.json();
+    const category = [...new Set(data.map(item => item.category))]
+    console.log(category)
+    loadCategory(category)
+   
+  } catch (err) {
+    console.log("err while fetching category based data", err)
+  }
+}
+getCategoryBasedData()
+
+// function loadCategory(category) {
+//      category.find(items=>items === "jewelery") 
+// }
+
+// let jewelleryOption = document.getElementById("jewellery")
+// jewelleryOption.addEventListener("click", function(){
+//   alert("this is lokesh")
+// })
