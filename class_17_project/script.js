@@ -32,8 +32,8 @@ async function getCategoryBasedData() {
     const data = await res.json();
     const category = [...new Set(data.map(item => item.category))]
     console.log(category)
-    loadCategory(category)
-   
+    getUserData(category)
+
   } catch (err) {
     console.log("err while fetching category based data", err)
   }
@@ -48,3 +48,16 @@ getCategoryBasedData()
 // jewelleryOption.addEventListener("click", function(){
 //   alert("this is lokesh")
 // })
+let products = [];
+const select = document.getElementById("category");
+select.addEventListener("change", function () {
+  const value = this.value;
+  console.log(value)
+  if (value === "category") {
+    getUserData(products);
+    return "working";
+  }
+  const filtered = products.filter(item => item.category.includes(value));
+
+  getUserData(filtered);
+})
